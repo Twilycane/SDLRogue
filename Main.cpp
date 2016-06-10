@@ -4,8 +4,8 @@ Engine::Base base;
 
 int main(int argc, char *args[]) {
 	base.init();
-	base.printTile(1, 5, 5);
-	SDL_Delay(3000);
+	base.printString("Hello Sylvia!", 0, 0);
+	base.update();
 	base.close();
 	return 0;
 }
