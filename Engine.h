@@ -7,6 +7,7 @@ using namespace std;
 
 
 namespace Engine {
+
 	class Base {
 	public: 
 		SDL_Window *mainWindow = nullptr;
@@ -19,6 +20,8 @@ namespace Engine {
 		void printTile(int ascii, int x, int y);
 		void printTile(int ascii, int x, int y, int size);
 		void printString(std::string txt, int x, int y);
+		void printString(std::string txt, int x, int y, int size);
+		void clearScreen();
 		void update();
 		void close();
 	protected:
